@@ -4,15 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="100"
     tools:context="galyanae.hakton.MainActivity">
 
+
+    <Button
+        android:id="@+id/gas_button"
+        android:layout_width="140dp"
+        android:layout_height="81dp"
+        android:text="GAS"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="421dp"
+        tools:ignore="MissingConstraints" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/timer"
+        android:layout_width="118dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="8dp"
+        android:text="timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="10"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@id/traffic_light"
+        android:layout_width="104dp"
+        android:layout_height="117dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginRight="141dp"
+        app:layout_constraintEnd_toStartOf="@+id/timer"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="84dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="421dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/breaks_buutton"
+        android:layout_width="140dp"
+        android:layout_height="81dp"
+        android:text="BREAKS"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="423dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:text="speed"
+        app:layout_constraintTop_toBottomOf="@+id/timer"
+        tools:layout_editor_absoluteX="260dp"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
